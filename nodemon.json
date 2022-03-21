@@ -1,0 +1,13 @@
+{
+  "watch": ["./src/**"],
+  "ignore": ["node_modules", "dist"],
+  "exec": "ts-node --transpile-only --project tsconfig.json src/server/main.ts",
+  "verbose": true,
+  "ext": "js ts tsx",
+  "signal": "SIGINT",
+  "delay": "500",
+  "env": {
+    "NODE_ENV": "development",
+    "LOCALGEN": true
+  }
+}
